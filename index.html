@@ -19,26 +19,86 @@
       gap:20px;
     }
 
-    .gallery img{
-      width:100%;
+    .image-box{
+      position:relative;
+      overflow:hidden;
       border-radius:12px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.2);
       background:white;
+      box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .image-box img{
+      width:100%;
+      display:block;
+    }
+
+    .index{
+      position:absolute;
+      top:10px;
+      right:10px;
+      width:35px;
+      height:35px;
+      border-radius:50%;
+      background: red;
+      color: white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:16px;
+      font-weight:bold;
+      box-shadow:0 2px 8px rgba(0,0,0,0.3);
     }
   </style>
 </head>
 <body>
 
   <div class="gallery">
-    <img src="img/image_1.png" alt="Image 1">
-    <img src="img/image_2.png" alt="Image 2">
-    <img src="img/image_3.png" alt="Image 3">
-    <img src="img/image_4.png" alt="Image 4">
-    <img src="img/image_5.png" alt="Image 5">
-    <img src="img/image_6.png" alt="Image 6">
-    <img src="img/image_7.png" alt="Image 7">
-    <img src="img/image_8.png" alt="Image 8">
-    <img src="img/image_9.png" alt="Image 9">
+
+    <div class="image-box">
+      <img src="img/image_1.png" alt="Image 1">
+      <div class="index">1</div>
+    </div>
+
+    <div class="image-box">
+      <img src="img/image_2.png" alt="Image 2">
+      <div class="index">2</div>
+    </div>
+
+    <div class="image-box">
+      <img src="img/image_3.png" alt="Image 3">
+      <div class="index">3</div>
+    </div>
+
+    <div class="image-box">
+      <img src="img/image_4.png" alt="Image 4">
+      <div class="index">4</div>
+    </div>
+
+    <div class="image-box">
+      <img src="img/image_5.png" alt="Image 5">
+      <div class="index">5</div>
+    </div>
+
+    <div class="image-box">
+      <img src="img/image_6.png" alt="Image 6">
+      <div class="index">6</div>
+    </div>
+
+    <div class="image-box">
+      <img src="img/image_7.png" alt="Image 7">
+      <div class="index">7</div>
+    </div>
+
+    <div class="image-box">
+      <img src="img/image_8.png" alt="Image 8">
+      <div class="index">8</div>
+    </div>
+
+    <div class="image-box">
+      <img src="img/image_9.png" alt="Image 9">
+      <div class="index">9</div>
+    </div>
+
   </div>
 
 </body>
